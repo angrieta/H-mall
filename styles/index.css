@@ -28,11 +28,24 @@ main .mainBnr .slide4{background-image: url(../images/index/bnr_bg1.png);}
 main .mainBnr .slide5{background-image: url(../images/index/bnr_bg2.png);}
 main .mainBnr .slide6{background-image: url(../images/index/bnr_bg3.png);}
 main .mainBnr .swiper-pagination span{
-   background-color: #fff;
+background-color: #fff;
 }
+main .slide_bnr_btn{
+    position: relative;
+}
+main .slide_bnr_btn .swiper-button-next {
+    position: absolute; top: -400px; right: 50px;
+    color: #fff;
+}
+main .slide_bnr_btn .swiper-button-prev {
+    position: absolute; top: -400px; left: 50px;
+    color: #fff;
+}
+
 main .sell {
     width: 100%;
     text-align: center;
+    margin-bottom: 120px;
 }
 main .sell h2 {
     margin-top: 120px;
@@ -60,11 +73,13 @@ main .sell .category a {
 main .sell .saleContent {
     margin-top: 55px;
     width: 1760px;
-    background-color: aqua;
 }
 main .sell .swiper-wrapper {}
 main .sell .saleContent .swiper-slide {text-align: start;}
-main .sell a h3 {font-size:0.875rem; font-weight: 700; margin-bottom: 5px;}
+main .sell a h3 {
+    font-size:0.875rem; font-weight: 700; margin-bottom: 5px;
+    margin-top: 8px;
+}
 main .sell a > p {font-size:0.875rem; font-weight: 500; margin-bottom: 5px;}
 main .sell a .sale_price {margin-bottom: 5px;}
 main .sell a .sale_price del {color: #B9B9B9; }
@@ -89,3 +104,140 @@ main .sell .slide_btn .swiper-button-prev{
     position: absolute; top: -180px; left: 20px;
     transform: scale(60%);
 }
+
+/* event 시작 */
+main .event_box{
+    background-color: #222;
+    padding: 105px 0;
+}
+main .event_box h2{ color: #fff; padding: 0; margin: 0 0 8px;}
+main .event_box > p{ color: #fff; padding-bottom: 50px;}
+main .event_box .event_container{
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    text-align: left;
+}
+main .event_box .event_container .event{}
+main .event_box .event_container .contents2{padding: 0 26px;}
+main .event_box .event_container .event a img{}
+main .event_box .event_container .event a p{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color:#fff;
+    margin:13px 0 13px 0;
+}
+main .event_box .event_container .event a em{
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color:#fff;
+}
+/* event 종료 */
+
+main .sell .newContent {
+    margin-top: 55px;
+    width: 1760px;
+}
+main .sell .newContent .swiper-slide {text-align: start;}
+
+/* 브랜드 배너 시작 */
+main .brand_bnr{
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    padding: 95px 0;
+}
+/* 브랜드 배너 폰트 */
+main .brand_bnr .brand_bnr_box{}
+main .brand_bnr .brand_bnr_box{text-align: center;}
+main .brand_bnr .brand_bnr_box .main_text{
+    font-size: 1.3125rem;
+    text-align: start;
+    line-height: 1.4;
+    font-weight: 700;
+}
+main .brand_bnr .brand_bnr_box h3{}
+main .brand_bnr .brand_bnr_box .main_left_bg1 {
+    position: relative;
+}
+main .brand_bnr .brand_bnr_box .main_left_bg1 .main_text{
+    position: absolute; bottom: 68px; left: 63px;
+}
+main .brand_bnr .brand_bnr_box .main_left_bg2 {
+    position: relative;
+}
+main .brand_bnr .brand_bnr_box .main_left_bg2 .main_text{
+    position: absolute; bottom: 68px; left: 63px;
+    color:#fff;
+}
+main .brand_bnr .brand_bnr_box p{}
+main .brand_bnr .brand_bnr_box p em{}
+main .brand_bnr .text_ani {color: #fff;}
+main .brand_bnr .text_ani h3{font-size: 0.875rem; font-weight: 700; margin-bottom: 5px;}
+main .brand_bnr .text_ani p{font-size: 0.875rem; font-weight: 500; margin-bottom: 10px;}
+main .brand_bnr .text_ani em{font-size: 0.875rem; font-weight: 500;}
+/* 브랜드 배너 폰트 */
+main .brand_bnr .brand_bnr_box{
+    width: 1760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+main .brand_bnr .left_bnr{
+    display: flex;
+}
+main .brand_bnr .left_bnr .main_left_bg1{
+    background-image: url(../images/index/perfume_main.png);
+    width: 527px;
+    height: 661px;
+    margin-right: 33px;
+}
+main .brand_bnr .left_bnr .right_menu{}
+main .brand_bnr .left_bnr .right_menu .top_bg{
+    background-image: url(../images/index/perfume_001.png);
+    width: 303px; height: 314px;
+}
+main .brand_bnr .left_bnr .right_menu .btm_bg{
+    margin-top: 33px;
+    background-image: url(../images/index/perfume_002.png);
+    width: 303px; height: 314px;
+}
+/* -------------------------------------------------left */
+main .brand_bnr .right_bnr{
+    display: flex;
+}
+main .brand_bnr .right_bnr .main_left_bg2{
+    background-image: url(../images/index/bose_maimn.png);
+    width: 527px;
+    height: 661px;
+    margin-right: 33px;
+}
+main .brand_bnr .right_bnr .right_menu{}
+main .brand_bnr .right_bnr .right_menu .top_bg{
+    background-image: url(../images/index/bose_001.png);
+    width: 303px; height: 314px;
+}
+main .brand_bnr .right_bnr .right_menu .btm_bg{
+    background-image: url(../images/index/bose_002.png);
+    width: 303px; height: 314px;
+    margin-top: 33px;
+}
+/* 애니메이션 */
+main .brand_bnr .ani {height: 314px; align-content: center; overflow: hidden;}
+main .brand_bnr .text_ani{
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+main .brand_bnr .text_ani:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    animation: bestTransfer 0.2s linear ;
+}
+@keyframes bestTransfer {
+    0% {transform:translateY(150px);}
+    100% {transform:translateY(0)}
+    
+}
+/* 브랜드 배너 종료 */
