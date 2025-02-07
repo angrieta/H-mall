@@ -110,10 +110,12 @@ main .sell .slide_btn {
 main .sell .slide_btn .swiper-button-next{
     position: absolute; top: -180px; right: 20px;
     transform: scale(60%);
+    color: #222;
 }
 main .sell .slide_btn .swiper-button-prev{
     position: absolute; top: -180px; left: 20px;
     transform: scale(60%);
+    color: #222;
 }
 
 /* event 시작 */
@@ -387,21 +389,25 @@ main .sell .brand_wrap .brandContents{}
 main .sell .brand_wrap .swiper-button-next {
     transform: scale(0.5);
     display: inline-block !important;
+    color: #222;
 }
 main .sell .brand_wrap .swiper-button-prev {
     transform: scale(0.5);
     display: inline-block !important;
     left: 50.9%;
+    color: #222;
 }
 main .sell .left_brand .swiper-button-next {
     transform: scale(0.5);
     display: inline-block !important;
     right: 50.9%;
+    color: #222;
 }
 main .sell .left_brand .swiper-button-prev {
     transform: scale(0.5);
     display: inline-block !important;
     left: 8px;
+    color: #222;
 }
 /* 브랜드컨텐츠종료 */
 main{}
