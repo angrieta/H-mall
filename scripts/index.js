@@ -6,33 +6,52 @@ var bnr = new Swiper(".mainBnr", {
     loop:true,
     slidesPerView: 3,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".mainBnr .swiper-button-next",
+        prevEl: ".mainBnr .swiper-button-prev",
     },
 });
 var sale = new Swiper(".saleContent", {
     loop:true,
     slidesPerView: 6,
     spaceBetween: 12,
-    pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".sale .swiper-button-next",
+        prevEl: ".sale .swiper-button-prev",
     },
 });
-var sale = new Swiper(".newContent", {
+var newItem = new Swiper(".newContent", {
     loop:true,
     slidesPerView: 6,
     spaceBetween: 12,
-    pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".new_aria .swiper-button-next",
+        prevEl: ".new_aria .swiper-button-prev",
     },
 });
+var best = new Swiper(".best", {
+    direction: "vertical",
+    mousewheel:true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+    },
+    slidesPerView: 2,
+    spaceBetween: 50,
+  });
+  var brand = new Swiper(".brandContent", {
+    loop:true,
+    slidesPerView: 3,
+    spaceBetween: 13,
+    navigation: {
+        nextEl: ".brand_wrap .swiper-button-next",
+        prevEl: ".brand_wrap .swiper-button-prev",
+    },
+});
+const categoryMenuBtn = document.querySelector('.h_btm .left_menu')
+const categoryMenu = document.querySelector('.header_menu')
+categoryMenuBtn.addEventListener('mouseenter',()=>{
+    categoryMenu.style.display ='block'
+})
+categoryMenu.addEventListener('mouseleave',()=>{
+    categoryMenu.style.display ='none'
+})
