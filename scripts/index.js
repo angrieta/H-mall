@@ -47,11 +47,11 @@ var best = new Swiper(".best", {
         prevEl: ".brand_wrap .swiper-button-prev",
     },
 });
-const categoryMenuBtn = document.querySelector('.h_btm .left_menu')
-const categoryMenu = document.querySelector('.header_menu')
-categoryMenuBtn.addEventListener('mouseenter',()=>{
-    categoryMenu.style.display ='block'
-})
-categoryMenu.addEventListener('mouseleave',()=>{
-    categoryMenu.style.display ='none'
+$('.h_btm .left_menu').mouseenter(function(){
+    //$('.header_menu').show();
+    $('.header_menu').slideDown(); //fadeIn 도 사용가능
+    })
+    $('.header_menus').mouseleave(function(){
+    $('.header_menu').hide();
+    console.log($('.submenu').is(":hidden"))
 })
