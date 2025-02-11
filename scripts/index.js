@@ -29,29 +29,64 @@ var newItem = new Swiper(".newContent", {
     },
 });
 var best = new Swiper(".best", {
-    direction: "vertical",
-    mousewheel:true,
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-    },
-    slidesPerView: 2,
-    spaceBetween: 50,
-  });
-  var brand = new Swiper(".brandContent", {
+    loop:true,
+    slidesPerView: 4,
+    spaceBetween: 27,
+});
+var brand1 = new Swiper(".brandContent1", {
     loop:true,
     slidesPerView: 3,
     spaceBetween: 13,
     navigation: {
-        nextEl: ".brand_wrap .swiper-button-next",
-        prevEl: ".brand_wrap .swiper-button-prev",
+        nextEl: ".brandContent1 .swiper-button-next",
+        prevEl: ".brandContent1 .swiper-button-prev",
+    },
+});
+var brand2 = new Swiper(".brandContent2", {
+    loop:true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".brandContent2 .swiper-button-next",
+        prevEl: ".brandContent2 .swiper-button-prev",
+    },
+});
+var brand1 = new Swiper(".brandContent3", {
+    loop:true,
+    slidesPerView: 3,
+    spaceBetween: 13,
+    navigation: {
+        nextEl: ".brandContent3 .swiper-button-next",
+        prevEl: ".brandContent3 .swiper-button-prev",
     },
 });
 $('.h_btm .left_menu').mouseenter(function(){
     //$('.header_menu').show();
     $('.header_menu').slideDown(); //fadeIn 도 사용가능
-    })
-    $('.header_menus').mouseleave(function(){
-    $('.header_menu').hide();
-    console.log($('.submenu').is(":hidden"))
 })
+$('.header_menu').mouseleave(function(){
+    $('.header_menu').hide();
+})
+
+
+$('sale .category a').click(function(e){
+    e.preventDefault()
+    $('sale.category a').removeClass('active');
+    $(this).addClass('active');  
+})
+$('.sale .category a').click(function(e){
+    e.preventDefault()
+    $('.sale .category a').removeClass('active');
+    $(this).addClass('active');  
+})
+$('new_aria .category a').click(function(e){
+    e.preventDefault()
+    $('new_aria .category a').removeClass('active');
+    $(this).addClass('active');  
+})
+$('.new_aria .category a').click(function(e){
+    e.preventDefault()
+    $('.new_aria .category a').removeClass('active');
+    $(this).addClass('active');  
+})
+

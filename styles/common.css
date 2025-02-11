@@ -1,5 +1,5 @@
 header{
-    width: 100%;
+    width: 1920px;
     border-bottom:1px solid #E3E3E3 ;
 }
 header .inner{
@@ -124,16 +124,18 @@ footer .footer_btm address{font-size: 0.8125rem; margin-bottom: 10px;}
 footer .footer_btm p {font-size: 0.8125rem; margin-bottom: 10px;}
 
 
+.main{
+    position: relative;
+}
 .header_menu{
-    width: 1920px;
+    width: 1758px;
     display: none;
+    margin: 0 auto;
 }
 .header_menu .category_menu{
-    width: 1758px;
     height: 600px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
 }
 .header_menu .category_menu .right_menu{
     display: flex; 

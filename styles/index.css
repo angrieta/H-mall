@@ -58,7 +58,7 @@ main .sell > p {
     padding-bottom: 30px;
 }
 main .sell .category {}
-main .sell .category a:hover {background-color: #000; color: #fff;}
+main .sell .category .active {background-color: #000; color: #fff;}
 main .sell .category a {
     padding: 10px 15px;
     font-size: 0.875rem;
@@ -248,14 +248,14 @@ main .brand_bnr .top_bg:hover .text_ani{
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
     width: 100%;
-    animation: bestTransfer 0.2s linear ;
+    animation: bestTransfer 0.3s linear ;
 }
 main .brand_bnr .btm_bg:hover .text_ani{
     display: block; 
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
     width: 100%;
-    animation: bestTransfer 0.2s linear ;
+    animation: bestTransfer 0.3s linear ;
 }
 
 @keyframes bestTransfer {
@@ -269,7 +269,7 @@ main{}
 main .best_aria{}
 main .best_aria .best{
     width: 1400px;
-    height: 1127px;
+    margin-bottom: 50px;
 }
 main .best_aria .best_contents{}
 main .best_aria .best_contents .best{}
@@ -279,6 +279,9 @@ main .best_aria .best_contents .best .swiper-wrapper{
 main .best_aria .best_contents .best .swiper-slide {
     display: flex;
     justify-content: space-between;
+}
+main .best_aria .best_contents .best .swiper-slide a .photo img {
+    width: 330px;
 }
 main .best_aria .best_contents .best .swiper-slide a{
     text-align: start;
@@ -353,10 +356,23 @@ main .brand .brand_wrap{
 main .brand .brandContent {
     text-align: start;
 }
-main .brand .brandContent {
-    width: 834px;
+main .brand .brandContent1 {
+    width: 960px;
+    padding-right: 10px;
+    padding-left: 30px;
+    margin: 0;
 }
-
+main .brand .brandContent2 {
+    width: 960px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+main .brand .brandContent3 {
+    width: 960px;
+    padding-right: 10px;
+    padding-left: 30px;
+    margin: 0;
+}
 main .brand .brand_wrap .brand_bg1{
     background-image: url(../images/index/brand_main1.png);
     width: 960px; height: 600px;
@@ -372,7 +388,13 @@ main .brand .brand_wrap .brand_bg3{
     width: 960px; height: 600px;
     align-content: center;
 }
-main .brand .brandContent .swiper-slide {
+main .brand .brandContent1 .swiper-slide {
+    align-content: center;
+}
+main .brand .brandContent2 .swiper-slide {
+    align-content: center;
+}
+main .brand .brandContent3 .swiper-slide {
     align-content: center;
 }
 main .sell .brand_wrap {
@@ -390,23 +412,24 @@ main .sell .brand_wrap .swiper-button-next {
     transform: scale(0.5);
     display: inline-block !important;
     color: #222;
+    right: 10px;
 }
 main .sell .brand_wrap .swiper-button-prev {
     transform: scale(0.5);
     display: inline-block !important;
-    left: 50.9%;
+    left: 8px;
     color: #222;
 }
 main .sell .left_brand .swiper-button-next {
     transform: scale(0.5);
     display: inline-block !important;
-    right: 50.9%;
+    right: 5px;
     color: #222;
 }
 main .sell .left_brand .swiper-button-prev {
     transform: scale(0.5);
     display: inline-block !important;
-    left: 8px;
+    left: 5px;
     color: #222;
 }
 /* 브랜드컨텐츠종료 */
