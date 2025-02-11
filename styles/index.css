@@ -1,5 +1,7 @@
 main{
+    padding-top: 129px ;
     width: 1920px;
+    z-index: 400;
 }
 main .mainBnr{}
 main .mainBnr .swiper-wrapper{
